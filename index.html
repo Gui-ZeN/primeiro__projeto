@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição ZenTech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Formulário de Inscrição ZenTech</h1>
+        <p id="description">Preencha todos os campos com atenção, obrigado pela confiança!</p>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <div class="grupo">
+                <label for="nomecompleto">Nome Completo: </label>
+                <input type="text" name="nome" id="nomecompleto" required>
+            </div>
+            <div class="grupo">
+                <label for="idade">Idade: </label>
+                <input type="number" name="idade" id="idade" min="15" required>
+            </div>
+            <div class="grupo">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="grupo">
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="telefone" id="telefone" required>
+            </div>
+            <div class="grupo">
+                <label for="datanascimento">Data de Nascimento: </label>
+                <input type="date" name="datanascimento" id="datanascimento" required>
+            </div>
+            <div class="grupo">
+                <label for="cpf">CPF: </label>
+                <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" maxlength="14" inputmode="numeric" pattern="[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informações Profissionais / Acadêmicas </legend>
+            <div class="grupo">
+                <label for="ocupacao">Ocupação / Cargo: </label>
+                <input type="text" name="ocupacao" id="ocupacao" required>
+            </div>
+            <div class="grupo">
+                <label for="instituicao">Instituição / Empresa: </label>
+                <input type="text" name="instituicao" id="instituicao" required>
+            </div>
+            <div class="grupo">
+                <h3>Área de Interesse</h3>
+                <label for="interesse-web"><input type="checkbox" name="dw" id="interesse-web"> Desenvolvimento Web</label>
+                <label for="interesse-ia"><input type="checkbox" name="ia" id="interesse-ia"> Inteligência Artificial</label>
+                <label for="interesse-cs"><input type="checkbox" name="cs" id="interesse-cs"> Cybersegurança</label>
+                <label for="interesse-cc"><input type="checkbox" name="cc" id="interesse-cc"> Cloud Computing</label>
+            </div>
+            <div class="grupo">
+                <h3>Nivel de Experiencia</h3>
+                <label for="experiencia-estu"><input type="radio" name="nivelexperiencia" id="experiencia-estu"> Estudante</label>
+                <label for="experiencia-jr"><input type="radio" name="nivelexperiencia" id="experiencia-jr"> Junior</label>
+                <label for="experiencia-pleno"><input type="radio" name="nivelexperiencia" id="experiencia-pleno"> Pleno</label>
+                <label for="experiencia-senior"><input type="radio" name="nivelexperiencia" id="experiencia-senior"> Sênior</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Preferências Para o Evento</legend>
+            <div class="grupo">
+                <label for="ingresso">Tipo de Ingresso:</label>
+                <select name="ingresso" id="ingresso">
+                    <option value="Basico">Basico</option>
+                    <option value="VIP">VIP</option>
+                    <option value="Estudante">Estudante</option>
+                </select>
+            </div>
+            <div class="grupo">
+                <label for="camisa">Tamanho da Camisa: </label>
+                <select name="camisa" id="camisa">
+                    <option value="PP">PP</option>
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Termos e Condições</legend>
+            <div class="termos">
+                <label for="termoscond"><input type="checkbox" name="termos" id="termoscond"> Eu aceito os <a href="#" target="_blank">Termos e Condições</a></label>
+            </div>
+        </fieldset>
+        <fieldset class="botoes">
+            <input type="submit" value="Enviar" class="botao_enviar" id="enviar">
+            <input type="reset" value="Limpar" class="botao_limpar" id="limpar">
+        </fieldset>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="#">Guilherme Zen</a> como um projeto pessoal</p>
+    </footer>
+</body>
+</html>
